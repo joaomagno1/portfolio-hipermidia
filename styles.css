@@ -1,0 +1,259 @@
+/* ==========================================================================
+   Apple Human Interface Guidelines (HIG) Custom Styles & Utilities
+   Portfolio de Hipermídia e Multimídia
+   ========================================================================== */
+
+:root {
+  --apple-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --apple-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Glassmorphism Patterns (macOS Sequoia / visionOS / iOS 18) */
+.apple-glass {
+  background: rgba(28, 28, 30, 0.68);
+  backdrop-filter: saturate(180%) blur(24px);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+html.light .apple-glass {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.06);
+}
+
+.apple-card {
+  background: linear-gradient(180deg, rgba(36, 36, 38, 0.75) 0%, rgba(22, 22, 24, 0.88) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+  transition: transform 0.4s var(--apple-ease), border-color 0.3s ease, box-shadow 0.4s var(--apple-ease);
+}
+
+html.light .apple-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(245, 245, 247, 0.95) 100%);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.07), inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
+  color: #1d1d1f;
+}
+
+html.light .hero-title-text {
+  background-image: linear-gradient(to bottom, #1d1d1f 0%, #424245 100%);
+}
+
+html.light .apple-card .text-zinc-200,
+html.light .apple-card .text-zinc-300,
+html.light .apple-card .text-white {
+  color: #1d1d1f;
+}
+
+html.light #album-art-box .text-white,
+html.light #album-art-box .text-white\/90 {
+  color: #ffffff;
+}
+
+html.light #audio-play-btn {
+  background-color: #1d1d1f;
+  color: #ffffff;
+}
+
+html.light .apple-card .bg-white\/5,
+html.light .apple-card .bg-white\/10,
+html.light .apple-card .bg-white\/15 {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.apple-card-hover:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+html.light .apple-card-hover:hover {
+  border-color: rgba(0, 113, 227, 0.3);
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.12);
+}
+
+/* Apple TV+ & Apple Music Custom Range Sliders */
+.apple-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  outline: none;
+  cursor: pointer;
+  transition: height 0.2s var(--apple-ease), background 0.2s ease;
+  position: relative;
+}
+
+html.light .apple-slider.light-adaptive {
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.apple-slider:hover {
+  height: 8px;
+}
+
+.apple-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.2s ease, transform 0.2s var(--apple-spring);
+}
+
+.apple-slider:hover::-webkit-slider-thumb,
+.apple-slider:focus::-webkit-slider-thumb {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.apple-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.2s ease, transform 0.2s var(--apple-spring);
+}
+
+.apple-slider:hover::-moz-range-thumb,
+.apple-slider:focus::-moz-range-thumb {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Video Player Controls Overlay Transition */
+.video-controls-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.45) 35%,
+    rgba(0, 0, 0, 0) 65%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
+  transition: opacity 0.35s var(--apple-ease);
+}
+
+/* Ambient Light Glow behind Video Player */
+.ambient-glow {
+  transition: opacity 0.8s ease, background 0.6s ease;
+  filter: blur(65px);
+}
+
+/* Apple Music Live Lyrics / Synchronized Transcript Scroll */
+.lyrics-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+.lyrics-container::-webkit-scrollbar {
+  display: none;
+}
+
+.lyric-line {
+  transition: all 0.35s var(--apple-ease);
+  opacity: 0.38;
+  transform: scale(0.96);
+  transform-origin: left center;
+  cursor: pointer;
+}
+
+.lyric-line:hover {
+  opacity: 0.75;
+}
+
+.lyric-line.active {
+  opacity: 1;
+  transform: scale(1);
+  color: #ffffff;
+  text-shadow: 0 0 24px rgba(255, 255, 255, 0.25);
+}
+
+html.light .lyric-line.active {
+  color: #1d1d1f;
+  text-shadow: none;
+}
+
+/* Album Art Floating & Playing Animation */
+.album-art-wrapper {
+  transition: transform 0.6s var(--apple-spring), box-shadow 0.6s var(--apple-ease);
+}
+
+.album-art-wrapper.is-playing {
+  transform: scale(1.03);
+  box-shadow: 0 28px 60px -10px rgba(250, 36, 60, 0.35);
+}
+
+.album-art-wrapper.is-paused {
+  transform: scale(0.94);
+  opacity: 0.9;
+}
+
+/* Equalizer Micro-Animation for Active Track */
+@keyframes eq-bar-1 {
+  0%, 100% { height: 4px; }
+  50% { height: 14px; }
+}
+@keyframes eq-bar-2 {
+  0%, 100% { height: 14px; }
+  33% { height: 5px; }
+  66% { height: 12px; }
+}
+@keyframes eq-bar-3 {
+  0%, 100% { height: 7px; }
+  40% { height: 15px; }
+  80% { height: 4px; }
+}
+
+.eq-bar {
+  width: 3px;
+  border-radius: 99px;
+  background-color: #fa243c;
+  display: inline-block;
+}
+
+.playing .eq-bar:nth-child(1) { animation: eq-bar-1 0.8s infinite ease-in-out; }
+.playing .eq-bar:nth-child(2) { animation: eq-bar-2 0.7s infinite ease-in-out; }
+.playing .eq-bar:nth-child(3) { animation: eq-bar-3 0.9s infinite ease-in-out; }
+.playing .eq-bar:nth-child(4) { animation: eq-bar-1 0.65s infinite ease-in-out; }
+
+/* Subtle Grid Background Pattern */
+.bg-apple-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+html.light .bg-apple-grid {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+}
