@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         card.classList.remove('border-apple-blue/60', 'ring-1', 'ring-apple-blue/40');
         if (statusBadge) {
-          statusBadge.textContent = 'Saltar →';
+          statusBadge.textContent = 'Ir para trecho →';
           statusBadge.className = 'text-[10px] text-apple-gray';
         }
       }
@@ -851,61 +851,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const vCtx = vizCanvas.getContext('2d');
   const toggleVizModeBtn = document.getElementById('toggle-viz-mode');
 
-  // Catálogo de Faixas do Trabalho de Áudio (Faixa 01 = atividade_audio.mp3 enviada pelo usuário)
+  // Faixa do Trabalho de Áudio (atividade_audio.mp3)
   const audioTracks = [
     {
       id: 0,
-      title: 'Atividade de Áudio — Trabalho Prático (atividade_audio.mp3)',
-      artist: 'Produção Sonora · Portfólio de Hipermídia e Multimídia',
+      title: 'Atividade Prática de Áudio',
+      artist: 'Disciplina de Hipermídia · Edição e Tratamento Sonoro',
       duration: 61,
       fileSrc: 'atividade_audio.mp3',
       preset: 'custom',
-      badge: 'MP3 Original · 1.3 MB',
+      badge: 'Trabalho 03',
       gradient: 'from-rose-600 via-fuchsia-700 to-indigo-900',
-      ambient: 'from-apple-red/35 via-apple-purple/25 to-apple-blue/20',
+      ambient: 'from-apple-red/20 via-apple-purple/15 to-apple-blue/15',
       blobUrl: 'atividade_audio.mp3',
       lyrics: [
-        { time: 0, text: '♪ [00:00] Início da reprodução: Atividade de Áudio (atividade_audio.mp3)' },
-        { time: 12, text: 'Apresentação e desenvolvimento sonoro do trabalho prático de áudio.' },
-        { time: 25, text: 'Clique em qualquer trecho deste roteiro sincronizado para saltar diretamente na linha do tempo.' },
-        { time: 40, text: 'Processamento de áudio integrado ao player Apple Music com análise espectral 60fps.' },
-        { time: 52, text: '♪ [00:52] Conclusão e encerramento da faixa de áudio.' }
-      ]
-    },
-    {
-      id: 1,
-      title: 'Estudo Complementar 02: Paisagem Sonora Binaural & Síntese FM',
-      artist: 'Estudo Acústico · Espacialização Estéreo L/R',
-      duration: 32,
-      preset: 'binaural',
-      badge: 'Binaural · 44.1kHz',
-      gradient: 'from-indigo-600 via-purple-700 to-slate-900',
-      ambient: 'from-indigo-500/35 via-purple-500/25 to-sky-400/20',
-      blobUrl: null,
-      lyrics: [
-        { time: 0, text: '♪ [Início: Osciladores duplos com leve desvio de fase entre os canais L e R]' },
-        { time: 6, text: 'A percepção binaural ocorre quando frequências ligeiramente distintas chegam a cada ouvido.' },
-        { time: 13, text: 'Observe no analisador espectral como os harmônicos graves sustentam a atmosfera.' },
-        { time: 20, text: 'No design de interfaces da Apple, sons sutis transmitem materialidade e profundidade.' },
-        { time: 27, text: '♪ [Resolução: Ressonância harmônica em Ré Menor Dórico]' }
-      ]
-    },
-    {
-      id: 2,
-      title: 'Estudo Complementar 03: Ritmo Algorítmico & Texturas Digitais',
-      artist: 'Composição Procedural · Sequenciador Harmônico',
-      duration: 28,
-      preset: 'rhythmic',
-      badge: 'Sequência · 60fps FFT',
-      gradient: 'from-sky-500 via-blue-700 to-emerald-900',
-      ambient: 'from-apple-teal/35 via-apple-blue/25 to-emerald-500/20',
-      blobUrl: null,
-      lyrics: [
-        { time: 0, text: '♪ [Pulso Algorítmico: Arpejos gerados matematicamente a 180 notas por minuto]' },
-        { time: 6, text: 'A multimídia computacional permite gerar música diretamente a partir de algoritmos.' },
-        { time: 12, text: 'Envelopes exponenciais controlam o ataque e o decaimento de cada nota sintetizada.' },
-        { time: 19, text: 'Experimente clicar no visualizador ao lado para alternar entre FFT e Osciloscópio.' },
-        { time: 24, text: '♪ [Finalização: Cadência suspensa e silêncio digital]' }
+        { time: 0, text: 'Início da atividade prática de áudio desenvolvida na disciplina.' },
+        { time: 12, text: 'Etapa de tratamento sonoro: limpeza da gravação e remoção de ruídos de fundo.' },
+        { time: 25, text: 'Edição da faixa: realização de cortes, ajustes de tempo e nivelamento de volume.' },
+        { time: 40, text: 'Aplicação de efeitos sonoros para complementar a edição do áudio.' },
+        { time: 52, text: 'Conclusão e encerramento da atividade de áudio.' }
       ]
     }
   ];
@@ -1134,11 +1098,11 @@ document.addEventListener('DOMContentLoaded', () => {
     updateSliderFill(audioVolume, document.documentElement.classList.contains('light') ? '#1d1d1f' : '#ffffff');
   });
 
-  // Alternar modo do Visualizador (Barras de Frequência FFT vs Onda Senoidal)
+  // Alternar modo do Visualizador de Áudio
   const switchVizMode = () => {
     vizMode = vizMode === 'bars' ? 'wave' : 'bars';
     document.getElementById('audio-viz-label').textContent =
-      vizMode === 'bars' ? 'Analisador Espectral FFT' : 'Osciloscópio no Domínio do Tempo';
+      vizMode === 'bars' ? 'Frequências do Áudio' : 'Ondas Sonoras';
   };
   toggleVizModeBtn.addEventListener('click', switchVizMode);
   vizCanvas.addEventListener('click', switchVizMode);

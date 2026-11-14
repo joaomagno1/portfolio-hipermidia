@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio de Hipermídia e Multimídia — Apple Design Edition</title>
+  <title>Portfólio Acadêmico — Hipermídia</title>
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -77,55 +77,41 @@
   </div>
 
   <!-- ========================================================================
-       APPLE GLOBAL NAVIGATION BAR (Sticky Glassmorphism)
+       CABEÇALHO DE NAVEGAÇÃO
        ======================================================================== -->
   <header class="sticky top-0 z-50 w-full apple-glass transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
-      <!-- Brand / Course Identity -->
+      <!-- Identificação do Curso -->
       <a href="#hero" class="flex items-center gap-2.5 group focus:outline-none">
-        <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-apple-blue via-indigo-500 to-apple-teal flex items-center justify-center shadow-lg shadow-apple-blue/25 group-hover:scale-105 transition-transform">
+        <div class="w-8 h-8 rounded-xl bg-apple-blue flex items-center justify-center shadow-md">
           <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
             <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" />
           </svg>
         </div>
         <div class="flex flex-col">
-          <span class="text-sm font-semibold tracking-tight leading-none dark:text-white text-zinc-900">Hipermídia <span class="text-apple-gray font-normal">&amp; Multimídia</span></span>
-          <span class="text-[10px] font-mono text-apple-gray tracking-wider uppercase mt-0.5">Apple HIG Portfolio</span>
+          <span class="text-sm font-semibold tracking-tight leading-none dark:text-white text-zinc-900">Portfólio de Hipermídia</span>
+          <span class="text-[10px] text-apple-gray tracking-wider uppercase mt-0.5">Trabalhos Acadêmicos</span>
         </div>
       </a>
 
-      <!-- Center Navigation Links -->
+      <!-- Links de Navegação -->
       <nav class="hidden md:flex items-center gap-6 text-xs font-medium text-zinc-400 dark:text-zinc-300">
-        <a href="#hero" class="hover:text-apple-blue transition-colors">Visão Geral</a>
-        <a href="#video-section" class="hover:text-apple-blue transition-colors flex items-center gap-1.5">
-          <span class="w-1.5 h-1.5 rounded-full bg-apple-blue"></span>
-          Vídeo (Curriculum Vitae)
-        </a>
-        <a href="#youtube-section" class="hover:text-apple-blue transition-colors flex items-center gap-1.5">
-          <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-          Vídeo (YouTube)
-        </a>
-        <a href="#audio-section" class="hover:text-apple-blue transition-colors flex items-center gap-1.5">
-          <span class="w-1.5 h-1.5 rounded-full bg-apple-red"></span>
-          Trabalho de Áudio
-        </a>
-        <a href="#concepts-section" class="hover:text-apple-blue transition-colors">Arquitetura Hipermídia</a>
+        <a href="#hero" class="hover:text-apple-blue transition-colors">Apresentação</a>
+        <a href="#video-section" class="hover:text-apple-blue transition-colors">Vídeo Curriculum Vitae</a>
+        <a href="#youtube-section" class="hover:text-apple-blue transition-colors">Vídeo no YouTube</a>
+        <a href="#audio-section" class="hover:text-apple-blue transition-colors">Atividade de Áudio</a>
+        <a href="#concepts-section" class="hover:text-apple-blue transition-colors">Sobre a Disciplina</a>
       </nav>
 
-      <!-- Right Actions: Status & Theme Toggle -->
+      <!-- Ações à Direita -->
       <div class="flex items-center gap-3">
-        <div class="hidden sm:flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-mono text-apple-gray">
-          <span class="w-2 h-2 rounded-full bg-apple-green animate-pulse"></span>
-          <span id="nav-media-status">Pronto · 60Hz</span>
-        </div>
+        <span id="nav-media-status" class="hidden">Pronto</span>
 
-        <button id="theme-toggle" type="button" title="Alternar Tema Claro / Escuro (macOS)" class="p-2 rounded-full bg-white/10 hover:bg-white/20 text-zinc-200 transition-all focus:outline-none">
-          <!-- Sun Icon (shown in dark mode) -->
+        <button id="theme-toggle" type="button" title="Alternar Tema Claro / Escuro" class="p-2 rounded-full bg-white/10 hover:bg-white/20 text-zinc-200 transition-all focus:outline-none">
           <svg id="theme-icon-sun" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="4"></circle>
             <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
           </svg>
-          <!-- Moon Icon (shown in light mode) -->
           <svg id="theme-icon-moon" class="w-4 h-4 hidden text-zinc-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
@@ -137,175 +123,141 @@
   <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
 
     <!-- ======================================================================
-         HERO SECTION (Apple Product Keynote Style)
+         APRESENTAÇÃO INICIAL DO PORTFÓLIO
          ====================================================================== -->
-    <section id="hero" class="pt-14 pb-16 md:pt-20 md:pb-24 text-center">
-      <!-- Pill Badge -->
+    <section id="hero" class="pt-14 pb-14 md:pt-20 md:pb-20 text-center">
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full apple-glass mb-6">
         <span class="px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider bg-apple-blue text-white rounded-full">Portfólio Acadêmico</span>
-        <span class="text-xs font-medium text-zinc-300 dark:text-zinc-300">Curso de Hipermídia · Edição de Áudio &amp; Vídeo</span>
+        <span class="text-xs font-medium text-zinc-300 dark:text-zinc-300">Disciplina de Hipermídia</span>
       </div>
 
-      <!-- Main Display Title -->
-      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl mx-auto leading-[1.06]">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight max-w-4xl mx-auto leading-[1.1]">
         <span class="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-zinc-400 dark:from-white dark:via-zinc-100 dark:to-zinc-500 hero-title-text">
-          Produção audiovisual, tratamento sonoro e efeitos visuais.
+          Trabalhos Práticos de Áudio e Vídeo
         </span>
       </h1>
 
-      <!-- Subtitle / Apresentação do Curso de Hipermídia -->
-      <p class="mt-6 text-base sm:text-xl text-apple-gray max-w-3xl mx-auto font-normal leading-relaxed">
-        Este portfólio reúne os trabalhos práticos desenvolvidos no <strong class="text-zinc-200 dark:text-zinc-200 font-medium">curso de Hipermídia</strong>, onde exploramos o <strong class="text-zinc-200 dark:text-zinc-200 font-medium">tratamento de áudio</strong> — realizando a remoção de ruídos, limpeza de frequências e aplicação de efeitos sonoros — e o <strong class="text-zinc-200 dark:text-zinc-200 font-medium">tratamento e edição de vídeos</strong>, executando cortes precisos, montagem dinâmica, aplicação de efeitos visuais e composição com <strong class="text-zinc-200 dark:text-zinc-200 font-medium">Chroma Key</strong>.
+      <p class="mt-6 text-base sm:text-lg text-apple-gray max-w-3xl mx-auto font-normal leading-relaxed">
+        Bem-vindo ao meu portfólio acadêmico da disciplina de <strong class="text-zinc-200 dark:text-zinc-200 font-medium">Hipermídia</strong>. Ao longo do curso, desenvolvemos atividades práticas voltadas ao <strong class="text-zinc-200 dark:text-zinc-200 font-medium">tratamento de áudio</strong>, realizando a remoção de ruídos e o uso de efeitos sonoros, bem como ao <strong class="text-zinc-200 dark:text-zinc-200 font-medium">tratamento de vídeos</strong>, realizando cortes, aplicando efeitos visuais e utilizando técnicas de <strong class="text-zinc-200 dark:text-zinc-200 font-medium">Chroma Key</strong>.
       </p>
 
-      <!-- Primary CTA Buttons -->
       <div class="mt-9 flex flex-wrap items-center justify-center gap-3.5">
         <a href="#video-section" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-apple-blue hover:bg-apple-blueHover text-white font-medium text-sm shadow-lg shadow-apple-blue/30 transition-all hover:scale-[1.02] active:scale-[0.98]">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          Vídeo Curriculum Vitae (.mp4)
+          Vídeo Curriculum Vitae
         </a>
         <a href="#youtube-section" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full apple-card hover:border-red-500/40 text-sm font-medium transition-all hover:scale-[1.02] active:scale-[0.98]">
           <svg class="w-4 h-4 text-red-500 fill-current" viewBox="0 0 24 24">
             <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
           </svg>
-          Player do YouTube
+          Vídeo no YouTube
         </a>
         <a href="#audio-section" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full apple-card hover:border-white/30 text-sm font-medium transition-all hover:scale-[1.02] active:scale-[0.98]">
           <svg class="w-4 h-4 text-apple-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
           </svg>
-          Ouvir Áudio (atividade_audio.mp3)
+          Atividade de Áudio
         </a>
       </div>
 
-      <!-- Mini Bento Feature Bar -->
+      <!-- Resumo dos Conteúdos Práticos -->
       <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-3.5 max-w-4xl mx-auto text-left">
         <div class="apple-card rounded-2xl p-4">
           <div class="flex items-center justify-between text-apple-red mb-1.5">
-            <span class="text-[11px] font-mono uppercase tracking-wider font-semibold">Tratamento de Áudio</span>
+            <span class="text-[11px] uppercase tracking-wider font-semibold">Áudio</span>
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M2 10v3m4-7v11m4-14v17m4-13v9m4-5v2m4-6v10"/></svg>
           </div>
-          <p class="text-sm font-semibold">Remoção de Ruídos &amp; Efeitos</p>
-          <p class="text-xs text-apple-gray mt-0.5">Limpeza de ruído de fundo, equalização e aplicação de efeitos sonoros.</p>
+          <p class="text-sm font-semibold">Remoção de Ruídos e Efeitos</p>
+          <p class="text-xs text-apple-gray mt-0.5">Limpeza de gravações de voz e aplicação de efeitos sonoros.</p>
         </div>
 
         <div class="apple-card rounded-2xl p-4">
           <div class="flex items-center justify-between text-apple-blue mb-1.5">
-            <span class="text-[11px] font-mono uppercase tracking-wider font-semibold">Edição de Vídeo</span>
+            <span class="text-[11px] uppercase tracking-wider font-semibold">Vídeo</span>
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
           </div>
-          <p class="text-sm font-semibold">Cortes &amp; Montagem</p>
-          <p class="text-xs text-apple-gray mt-0.5">Decupagem, cortes sincronizados, ritmo narrativo e transições.</p>
+          <p class="text-sm font-semibold">Cortes e Edição</p>
+          <p class="text-xs text-apple-gray mt-0.5">Recorte de cenas, organização de sequência e sincronização.</p>
         </div>
 
         <div class="apple-card rounded-2xl p-4">
           <div class="flex items-center justify-between text-apple-purple mb-1.5">
-            <span class="text-[11px] font-mono uppercase tracking-wider font-semibold">Pós-Produção</span>
+            <span class="text-[11px] uppercase tracking-wider font-semibold">Tratamento Visual</span>
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98m-.01-10.98l-6.82 3.98"/></svg>
           </div>
-          <p class="text-sm font-semibold">Efeitos Visuais (VFX)</p>
-          <p class="text-xs text-apple-gray mt-0.5">Tratamento de imagem, correção visual, sobreposições e dinamismo.</p>
+          <p class="text-sm font-semibold">Efeitos Visuais</p>
+          <p class="text-xs text-apple-gray mt-0.5">Aplicação de transições, ajustes visuais e sobreposições.</p>
         </div>
 
         <div class="apple-card rounded-2xl p-4">
           <div class="flex items-center justify-between text-apple-green mb-1.5">
-            <span class="text-[11px] font-mono uppercase tracking-wider font-semibold">Composição Digital</span>
+            <span class="text-[11px] uppercase tracking-wider font-semibold">Composição</span>
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
           </div>
           <p class="text-sm font-semibold">Chroma Key</p>
-          <p class="text-xs text-apple-gray mt-0.5">Recorte de fundo verde e integração de cenários digitais em camadas.</p>
+          <p class="text-xs text-apple-gray mt-0.5">Remoção de fundo verde e inserção de novos cenários no vídeo.</p>
         </div>
       </div>
     </section>
 
     <!-- ======================================================================
-         SECTION 1: TRABALHO DE VÍDEO LOCAL (Trabalho CurriculumVitae.mp4)
+         SEÇÃO 1: TRABALHO DE VÍDEO (Trabalho CurriculumVitae.mp4)
          ====================================================================== -->
     <section id="video-section" class="py-12 scroll-mt-16">
-      <!-- Section Header -->
-      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-4">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-6 gap-4">
         <div>
           <div class="inline-flex items-center gap-2 text-apple-blue text-xs font-semibold uppercase tracking-widest mb-2">
             <span class="w-2 h-2 rounded-full bg-apple-blue"></span>
-            Projeto 01 · Produção de Vídeo &amp; Hipermídia (Arquivo Local MP4)
+            Trabalho 01 · Produção e Edição de Vídeo
           </div>
           <h2 class="text-3xl sm:text-4xl font-bold tracking-tight" id="video-project-title">
-            Trabalho Curriculum Vitae — Apresentação Audiovisual
+            Vídeo Curriculum Vitae
           </h2>
           <p class="text-apple-gray text-sm sm:text-base mt-1.5 max-w-2xl">
-            Reprodução nativa do arquivo <code class="px-1.5 py-0.5 rounded bg-white/10 text-xs font-mono text-zinc-200">Trabalho CurriculumVitae.mp4</code> no player Apple TV+ customizado com navegação não-linear por capítulos, controle de velocidade, Picture-in-Picture e Luz Ambiente.
+            Atividade prática de apresentação em formato de vídeo-currículo, aplicando edição, cortes e tratamento audiovisual.
           </p>
         </div>
 
-        <!-- Video Action Toolbar -->
-        <div class="flex flex-wrap items-center gap-2.5">
-          <!-- Ambient Light Toggle -->
-          <button id="toggle-ambient-btn" type="button" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-full apple-card text-xs font-medium hover:border-apple-blue/50 transition-all">
-            <span id="ambient-dot" class="w-2 h-2 rounded-full bg-apple-blue"></span>
-            <span>Luz Ambiente: Ativa</span>
-          </button>
-
-          <!-- Toggle between CurriculumVitae.mp4 and Built-in Motion Demo -->
-          <button id="reset-video-demo-btn" type="button" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full apple-card text-xs font-medium text-apple-teal hover:border-apple-teal/50 transition-all">
-            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
-            <span id="toggle-demo-label">Alternar para Demo 60fps</span>
-          </button>
-
-          <!-- Upload Another Local Video File -->
-          <label for="video-file-input" class="cursor-pointer inline-flex items-center gap-2 px-4 py-2 rounded-full bg-apple-blue/15 hover:bg-apple-blue/25 border border-apple-blue/40 text-apple-blue dark:text-sky-400 text-xs font-semibold transition-all">
-            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-            </svg>
-            <span>Trocar Vídeo (.mp4/.webm)</span>
-          </label>
+        <!-- Controles auxiliares ocultos por padrão para manter o aspecto acadêmico limpo -->
+        <div class="hidden">
+          <button id="toggle-ambient-btn" type="button"><span id="ambient-dot"></span><span>Luz Ambiente</span></button>
+          <button id="reset-video-demo-btn" type="button"><span id="toggle-demo-label">Alternar</span></button>
           <input id="video-file-input" type="file" accept="video/*" class="hidden" />
         </div>
       </div>
 
-      <!-- VIDEO PLAYER CONTAINER WITH AMBIENT GLOW -->
+      <!-- PLAYER DE VÍDEO -->
       <div class="relative group" id="video-player-wrapper">
-        <!-- Ambient Cinema Glow Backdrop -->
-        <div id="video-ambient-glow" class="ambient-glow absolute -inset-3 rounded-[36px] bg-gradient-to-r from-apple-blue/35 via-apple-purple/30 to-apple-teal/35 opacity-80 pointer-events-none z-0"></div>
+        <div id="video-ambient-glow" class="ambient-glow absolute -inset-3 rounded-[36px] bg-gradient-to-r from-apple-blue/20 via-apple-purple/15 to-apple-teal/20 opacity-60 pointer-events-none z-0"></div>
 
-        <!-- Main Video Frame -->
         <div id="video-viewport" class="relative z-10 w-full aspect-video rounded-apple-lg overflow-hidden bg-zinc-950 border border-white/15 shadow-2xl select-none">
 
-          <!-- HTML5 Native Video Element (Loaded by default with Trabalho CurriculumVitae.mp4) -->
           <video id="main-video" src="Trabalho%20CurriculumVitae.mp4" class="w-full h-full object-contain bg-black cursor-pointer" playsinline preload="metadata">
             <source src="Trabalho%20CurriculumVitae.mp4" type="video/mp4" />
-            Seu navegador não suporta a tag de vídeo HTML5.
+            Seu navegador não suporta a reprodução de vídeo.
           </video>
 
-          <!-- Built-in 60fps Apple Motion Graphics Canvas Engine (Optional Interactive Documentary) -->
           <canvas id="motion-video-canvas" width="1280" height="720" class="w-full h-full object-cover hidden cursor-pointer"></canvas>
 
-          <!-- Top Bar Overlay inside Player -->
+          <!-- Barra Superior Discreta no Vídeo -->
           <div id="video-top-overlay" class="video-controls-overlay absolute inset-x-0 top-0 p-4 sm:p-6 flex items-center justify-between pointer-events-none">
             <div class="flex items-center gap-3">
               <span class="px-2.5 py-1 rounded-md bg-apple-blue/80 backdrop-blur-md text-[11px] font-semibold tracking-wide text-white uppercase border border-white/20" id="video-badge-source">
-                MP4 NATIVO · HD
+                Trabalho 01
               </span>
               <div>
                 <h3 class="text-white text-sm sm:text-base font-semibold leading-tight drop-shadow" id="video-overlay-title">
                   Trabalho Curriculum Vitae
                 </h3>
                 <p class="text-zinc-300 text-xs" id="video-overlay-chapter">
-                  Arquivo do Portfólio · Trabalho CurriculumVitae.mp4
+                  Apresentação em Vídeo · Disciplina de Hipermídia
                 </p>
               </div>
             </div>
-
-            <!-- Technical Badges (Apple TV+ Style) -->
-            <div class="hidden sm:flex items-center gap-2">
-              <span class="px-2 py-0.5 rounded border border-white/25 text-[10px] font-mono font-semibold text-white/90 bg-black/30 backdrop-blur">H.264 MP4</span>
-              <span class="px-2 py-0.5 rounded border border-white/25 text-[10px] font-mono font-semibold text-white/90 bg-black/30 backdrop-blur">AAC STEREO</span>
-              <span id="video-smpte-code" class="px-2.5 py-0.5 rounded border border-apple-blue/40 text-[11px] font-mono text-sky-300 bg-black/50 backdrop-blur">
-                00:00:00:00
-              </span>
-            </div>
+            <span id="video-smpte-code" class="hidden">00:00:00:00</span>
           </div>
 
-          <!-- Center Play/Pause Floating Glass Button -->
+          <!-- Botão Central de Play/Pause -->
           <button id="video-center-play" type="button" aria-label="Reproduzir ou Pausar Vídeo" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full apple-glass flex items-center justify-center text-white shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group/play">
             <svg id="video-center-play-icon" class="w-9 h-9 ml-1 fill-current transition-transform group-hover/play:scale-105" viewBox="0 0 24 24">
               <polygon points="5 3 19 12 5 21 5 3" />
@@ -316,17 +268,15 @@
             </svg>
           </button>
 
-          <!-- Bottom Apple TV+ Glass Control Bar -->
+          <!-- Barra de Controles Inferior -->
           <div id="video-bottom-controls" class="video-controls-overlay absolute inset-x-0 bottom-0 p-4 sm:p-6 pt-12 flex flex-col gap-3">
             
-            <!-- Timeline Scrubber with Chapter Markers -->
             <div class="relative w-full flex items-center group/scrub">
-              <!-- Chapter Marker Dots on Timeline -->
               <div id="video-chapter-markers" class="absolute inset-x-0 h-1.5 pointer-events-none z-10 flex items-center">
-                <div class="absolute left-[0%] w-1.5 h-1.5 rounded-full bg-white/80" title="00:00 - Início / Apresentação"></div>
-                <div class="absolute left-[25%] w-1.5 h-1.5 rounded-full bg-white/80" title="25% - Formação & Trajetória"></div>
-                <div class="absolute left-[50%] w-1.5 h-1.5 rounded-full bg-white/80" title="50% - Competências & Projetos"></div>
-                <div class="absolute left-[75%] w-1.5 h-1.5 rounded-full bg-white/80" title="75% - Conclusão & Contato"></div>
+                <div class="absolute left-[0%] w-1.5 h-1.5 rounded-full bg-white/80" title="00:00 - Introdução"></div>
+                <div class="absolute left-[25%] w-1.5 h-1.5 rounded-full bg-white/80" title="00:15 - Formação"></div>
+                <div class="absolute left-[50%] w-1.5 h-1.5 rounded-full bg-white/80" title="00:31 - Habilidades"></div>
+                <div class="absolute left-[75%] w-1.5 h-1.5 rounded-full bg-white/80" title="00:46 - Conclusão"></div>
               </div>
 
               <input
@@ -341,29 +291,23 @@
               />
             </div>
 
-            <!-- Transport & Utility Controls Row -->
             <div class="flex items-center justify-between gap-2 text-white">
-              <!-- Left Transport Controls -->
               <div class="flex items-center gap-3 sm:gap-4">
-                <!-- Play / Pause -->
-                <button id="video-play-btn" type="button" title="Reproduzir / Pausar (Espaço)" class="p-2 rounded-full hover:bg-white/15 transition-colors">
+                <button id="video-play-btn" type="button" title="Reproduzir / Pausar" class="p-2 rounded-full hover:bg-white/15 transition-colors">
                   <svg id="video-play-icon" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                   <svg id="video-pause-icon" class="w-5 h-5 fill-current hidden" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
                 </button>
 
-                <!-- Skip -10s -->
                 <button id="video-skip-back" type="button" title="Retroceder 10 segundos" class="p-1.5 rounded-full hover:bg-white/15 transition-colors text-zinc-200 hover:text-white flex items-center gap-0.5 text-xs font-mono">
                   <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/></svg>
                   <span>10s</span>
                 </button>
 
-                <!-- Skip +10s -->
                 <button id="video-skip-fwd" type="button" title="Avançar 10 segundos" class="p-1.5 rounded-full hover:bg-white/15 transition-colors text-zinc-200 hover:text-white flex items-center gap-0.5 text-xs font-mono">
                   <span>10s</span>
                   <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13 17l5-5-5-5M6 17l5-5-5-5"/></svg>
                 </button>
 
-                <!-- Volume Control -->
                 <div class="hidden sm:flex items-center gap-2 group/vol">
                   <button id="video-mute-btn" type="button" title="Silenciar / Ativar Som" class="p-1.5 rounded-full hover:bg-white/15 transition-colors">
                     <svg id="video-vol-icon" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -379,7 +323,6 @@
                   <input id="video-volume" type="range" min="0" max="1" step="0.02" value="0.8" aria-label="Volume do vídeo" class="apple-slider w-20" />
                 </div>
 
-                <!-- Time Display -->
                 <div class="text-xs font-mono text-zinc-200 tracking-tight">
                   <span id="video-current-time">00:00</span>
                   <span class="text-zinc-500 mx-1">/</span>
@@ -387,23 +330,19 @@
                 </div>
               </div>
 
-              <!-- Right Utility Controls -->
               <div class="flex items-center gap-2 sm:gap-3">
-                <!-- Playback Speed Button -->
                 <button id="video-speed-btn" type="button" title="Velocidade de Reprodução" class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-mono font-semibold transition-colors">
                   1.0x
                 </button>
 
-                <!-- Picture-in-Picture (PiP) -->
-                <button id="video-pip-btn" type="button" title="Picture-in-Picture (PiP)" class="p-2 rounded-full hover:bg-white/15 transition-colors">
+                <button id="video-pip-btn" type="button" title="Miniatura (Picture-in-Picture)" class="p-2 rounded-full hover:bg-white/15 transition-colors">
                   <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <rect x="2" y="3" width="20" height="14" rx="2" />
                     <rect x="12" y="9" width="8" height="6" rx="1" fill="currentColor" />
                   </svg>
                 </button>
 
-                <!-- Fullscreen -->
-                <button id="video-fullscreen-btn" type="button" title="Tela Cheia (F)" class="p-2 rounded-full hover:bg-white/15 transition-colors">
+                <button id="video-fullscreen-btn" type="button" title="Tela Cheia" class="p-2 rounded-full hover:bg-white/15 transition-colors">
                   <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
                   </svg>
@@ -414,77 +353,70 @@
         </div>
       </div>
 
-      <!-- INTERACTIVE HYPERMEDIA CHAPTER CARDS (Non-linear Video Navigation) -->
+      <!-- SEÇÕES DO VÍDEO (Navegação por tópicos) -->
       <div class="mt-6">
         <div class="flex items-center justify-between mb-3">
-          <span class="text-xs font-mono uppercase tracking-wider text-apple-gray">Navegação Hipermídia · Saltos Rápidos no Vídeo (Trabalho Curriculum Vitae)</span>
-          <span class="text-xs text-apple-gray">Clique em um nó para saltar no tempo</span>
+          <span class="text-xs uppercase tracking-wider text-apple-gray font-semibold">Tópicos do Vídeo (Clique para avançar até a seção)</span>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5" id="video-chapters-grid">
           <button type="button" data-time="0" class="video-chapter-card apple-card apple-card-hover rounded-2xl p-4 text-left border-apple-blue/60 ring-1 ring-apple-blue/40 transition-all">
             <div class="flex items-center justify-between text-xs font-mono text-apple-blue mb-1">
-              <span>NÓ 01 · 00:00</span>
+              <span>PARTE 01 · 00:00</span>
               <span class="px-1.5 py-0.5 rounded bg-apple-blue/20 text-[10px]">Em exibição</span>
             </div>
-            <h4 class="font-semibold text-sm">Abertura &amp; Perfil</h4>
-            <p class="text-xs text-apple-gray mt-1">Introdução audiovisual do Curriculum Vitae e apresentação inicial.</p>
+            <h4 class="font-semibold text-sm">Apresentação Inicial</h4>
+            <p class="text-xs text-apple-gray mt-1">Introdução pessoal e objetivos apresentados no vídeo-currículo.</p>
           </button>
 
           <button type="button" data-time="15" class="video-chapter-card apple-card apple-card-hover rounded-2xl p-4 text-left transition-all">
             <div class="flex items-center justify-between text-xs font-mono text-apple-purple mb-1">
-              <span>NÓ 02 · 00:15</span>
-              <span class="text-[10px] text-apple-gray">Saltar →</span>
+              <span>PARTE 02 · 00:15</span>
+              <span class="text-[10px] text-apple-gray">Ir para trecho →</span>
             </div>
-            <h4 class="font-semibold text-sm">Formação &amp; Trajetória</h4>
-            <p class="text-xs text-apple-gray mt-1">Desenvolvimento acadêmico, referências e linha do tempo profissional.</p>
+            <h4 class="font-semibold text-sm">Formação Acadêmica</h4>
+            <p class="text-xs text-apple-gray mt-1">Resumo da trajetória de estudos e áreas de interesse.</p>
           </button>
 
           <button type="button" data-time="31" class="video-chapter-card apple-card apple-card-hover rounded-2xl p-4 text-left transition-all">
             <div class="flex items-center justify-between text-xs font-mono text-apple-red mb-1">
-              <span>NÓ 03 · 00:31</span>
-              <span class="text-[10px] text-apple-gray">Saltar →</span>
+              <span>PARTE 03 · 00:31</span>
+              <span class="text-[10px] text-apple-gray">Ir para trecho →</span>
             </div>
-            <h4 class="font-semibold text-sm">Habilidades &amp; Multimídia</h4>
-            <p class="text-xs text-apple-gray mt-1">Domínio técnico em ferramentas digitais, produção audiovisual e hipermídia.</p>
+            <h4 class="font-semibold text-sm">Conhecimentos e Prática</h4>
+            <p class="text-xs text-apple-gray mt-1">Principais competências técnicas e projetos realizados.</p>
           </button>
 
           <button type="button" data-time="46" class="video-chapter-card apple-card apple-card-hover rounded-2xl p-4 text-left transition-all">
             <div class="flex items-center justify-between text-xs font-mono text-apple-teal mb-1">
-              <span>NÓ 04 · 00:46</span>
-              <span class="text-[10px] text-apple-gray">Saltar →</span>
+              <span>PARTE 04 · 00:46</span>
+              <span class="text-[10px] text-apple-gray">Ir para trecho →</span>
             </div>
-            <h4 class="font-semibold text-sm">Síntese &amp; Encerramento</h4>
-            <p class="text-xs text-apple-gray mt-1">Conclusão da apresentação em vídeo e créditos finais do trabalho.</p>
+            <h4 class="font-semibold text-sm">Encerramento</h4>
+            <p class="text-xs text-apple-gray mt-1">Conclusão da apresentação e informações de contato.</p>
           </button>
         </div>
       </div>
     </section>
 
     <!-- ======================================================================
-         SECTION 1.5: PLAYER DO YOUTUBE INTEGRADO (Streaming Externo Hipermídia)
+         SEÇÃO 1.5: SEGUNDO TRABALHO DE VÍDEO (YOUTUBE)
          ====================================================================== -->
     <section id="youtube-section" class="py-12 scroll-mt-16">
-      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-4">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-6 gap-4">
         <div>
           <div class="inline-flex items-center gap-2 text-red-500 text-xs font-semibold uppercase tracking-widest mb-2">
-            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-            Projeto 01-B · Streaming em Nuvem (YouTube Player)
+            <span class="w-2 h-2 rounded-full bg-red-500"></span>
+            Trabalho 02 · Edição de Vídeo, Efeitos Visuais e Chroma Key
           </div>
           <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
-            Trabalho em Vídeo no YouTube
+            Trabalho Prático de Vídeo (YouTube)
           </h2>
           <p class="text-apple-gray text-sm sm:text-base mt-1.5 max-w-2xl">
-            Player oficial incorporado via YouTube IFrame API (<code class="px-1.5 py-0.5 rounded bg-white/10 text-xs font-mono text-zinc-200">ID: 3kbCqswjvPc</code>), permitindo reprodução em nuvem ou acesso direto à plataforma.
+            Atividade de edição e tratamento de vídeo publicada no YouTube, demonstrando o uso de cortes, efeitos visuais e aplicação de Chroma Key trabalhados durante as aulas.
           </p>
         </div>
 
-        <!-- Direct YouTube Link CTA -->
         <div class="flex flex-wrap items-center gap-3">
-          <button id="yt-reload-btn" type="button" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-full apple-card text-xs font-medium hover:border-white/30 transition-all">
-            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
-            <span>Reiniciar em 0:01</span>
-          </button>
-
           <a
             href="https://www.youtube.com/watch?v=3kbCqswjvPc&t=1s"
             target="_blank"
@@ -494,164 +426,114 @@
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
               <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
             </svg>
-            <span>Assistir Direto no YouTube ↗</span>
+            <span>Abrir no YouTube ↗</span>
           </a>
         </div>
       </div>
 
-      <!-- YOUTUBE APPLE CINEMA CONTAINER -->
+      <!-- PLAYER DO YOUTUBE -->
       <div class="relative group">
-        <!-- Ambient Red/Purple Cinema Glow -->
-        <div class="ambient-glow absolute -inset-3 rounded-[36px] bg-gradient-to-r from-red-600/30 via-apple-purple/25 to-apple-blue/30 opacity-80 pointer-events-none z-0"></div>
-
         <div class="relative z-10 rounded-apple-lg overflow-hidden apple-card border border-white/15 shadow-2xl bg-zinc-950">
-          <!-- macOS / Apple TV Window Top Bar -->
-          <div class="px-5 py-3 bg-white/5 border-b border-white/10 flex items-center justify-between gap-4">
-            <div class="flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full bg-[#ff5f57]"></span>
-              <span class="w-3 h-3 rounded-full bg-[#febc2e]"></span>
-              <span class="w-3 h-3 rounded-full bg-[#28c840]"></span>
-              <span class="ml-2 text-xs font-mono text-apple-gray truncate">youtube.com/watch?v=3kbCqswjvPc&amp;t=1s</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="px-2 py-0.5 rounded bg-red-500/20 text-red-400 text-[10px] font-mono uppercase font-semibold border border-red-500/30">YouTube Embed HD</span>
-            </div>
-          </div>
-
-          <!-- Responsive 16:9 YouTube Iframe -->
           <div class="relative w-full aspect-video bg-black">
             <iframe
               id="youtube-iframe"
               class="w-full h-full border-0"
               src="https://www.youtube.com/embed/3kbCqswjvPc?start=1&rel=0&modestbranding=1&playsinline=1"
-              title="Trabalho de Vídeo no YouTube — Portfólio Hipermídia"
+              title="Trabalho Prático de Vídeo — Disciplina de Hipermídia"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
-          </div>
-
-          <!-- Bottom Quick Info & Fallback Notice -->
-          <div class="px-5 py-3.5 bg-white/5 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-apple-gray">
-            <div class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-apple-green"></span>
-              <span>Vídeo sincronizado a partir de <strong class="text-zinc-200 font-mono">t=1s</strong> conforme link enviado.</span>
-            </div>
-            <a
-              href="https://www.youtube.com/watch?v=3kbCqswjvPc&t=1s"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-apple-blue hover:underline font-medium inline-flex items-center gap-1"
-            >
-              <span>Caso o navegador bloqueie incorporação local (file://), clique aqui para abrir no YouTube</span>
-              <span>↗</span>
-            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ======================================================================
-         SECTION 2: TRABALHO DE ÁUDIO (atividade_audio.mp3)
+         SEÇÃO 2: TRABALHO DE ÁUDIO (atividade_audio.mp3)
          ====================================================================== -->
     <section id="audio-section" class="py-14 scroll-mt-16">
-      <!-- Section Header -->
-      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-4">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-6 gap-4">
         <div>
           <div class="inline-flex items-center gap-2 text-apple-red text-xs font-semibold uppercase tracking-widest mb-2">
             <span class="w-2 h-2 rounded-full bg-apple-red"></span>
-            Projeto 02 · Produção de Áudio &amp; Paisagem Sonora (Arquivo Local MP3)
+            Trabalho 03 · Edição e Tratamento Sonoro
           </div>
           <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
-            Trabalho de Áudio — <span class="text-apple-red">atividade_audio.mp3</span>
+            Atividade Prática de Áudio
           </h2>
           <p class="text-apple-gray text-sm sm:text-base mt-1.5 max-w-2xl">
-            Reprodução nativa do arquivo <code class="px-1.5 py-0.5 rounded bg-white/10 text-xs font-mono text-zinc-200">atividade_audio.mp3</code> no estúdio inspirado no <strong class="text-zinc-200 font-medium">Apple Music</strong>, com visualizador espectral em tempo real e navegação sincronizada.
+            Trabalho desenvolvido para praticar o tratamento de áudio, incluindo limpeza e remoção de ruídos de fundo, cortes de edição e aplicação de efeitos sonoros.
           </p>
         </div>
 
-        <!-- Upload Custom Audio File -->
-        <div class="flex items-center gap-3">
-          <label for="audio-file-input" class="cursor-pointer inline-flex items-center gap-2 px-4 py-2 rounded-full bg-apple-red/15 hover:bg-apple-red/25 border border-apple-red/40 text-apple-red text-xs font-semibold transition-all">
-            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-            </svg>
-            <span>Importar Outro Áudio (.mp3/.wav)</span>
-          </label>
-          <input id="audio-file-input" type="file" accept="audio/*" class="hidden" />
-        </div>
+        <input id="audio-file-input" type="file" accept="audio/*" class="hidden" />
       </div>
 
-      <!-- HTML5 Audio Element (Preloaded with atividade_audio.mp3; no crossorigin attribute so file:// works without CORS errors) -->
       <audio id="main-audio" src="atividade_audio.mp3" preload="metadata"></audio>
 
-      <!-- APPLE MUSIC SPLIT BENTO CONTAINER -->
+      <!-- CONTAINER DO PLAYER DE ÁUDIO -->
       <div class="relative rounded-apple-lg apple-card overflow-hidden p-6 sm:p-8 lg:p-10">
-        <!-- Dynamic Blurred Artwork Ambient Glow -->
-        <div id="audio-ambient-bg" class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-gradient-to-br from-apple-red/30 via-apple-purple/25 to-apple-blue/20 blur-[90px] pointer-events-none transition-all duration-1000"></div>
+        <div id="audio-ambient-bg" class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-gradient-to-br from-apple-red/20 via-apple-purple/15 to-apple-blue/15 blur-[90px] pointer-events-none transition-all duration-1000"></div>
 
         <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
 
-          <!-- LEFT COLUMN (5 cols): Now Playing & Real-Time Spectrum Visualizer -->
+          <!-- COLUNA ESQUERDA: Player de Áudio -->
           <div class="lg:col-span-5 flex flex-col justify-between">
-            <!-- Top Row: Artwork + Track Metadata -->
             <div class="flex flex-col sm:flex-row lg:flex-col gap-6 items-center sm:items-start lg:items-center text-center sm:text-left lg:text-center">
-              <!-- Album Cover Art -->
-              <div id="album-art-box" class="album-art-wrapper is-paused relative w-44 h-44 sm:w-48 sm:h-48 rounded-2xl overflow-hidden shadow-2xl border border-white/15 shrink-0 bg-gradient-to-br from-rose-600 via-fuchsia-700 to-indigo-900 flex flex-col items-center justify-center p-5">
+              <div id="album-art-box" class="album-art-wrapper is-paused relative w-40 h-40 sm:w-44 sm:h-44 rounded-2xl overflow-hidden shadow-2xl border border-white/15 shrink-0 bg-gradient-to-br from-rose-600 via-fuchsia-700 to-indigo-900 flex flex-col items-center justify-center p-5">
                 <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.28),transparent_60%)]"></div>
-                <!-- Concentric Acoustic Rings SVG -->
-                <svg class="w-20 h-20 text-white/90 drop-shadow-md relative z-10" viewBox="0 0 100 100" fill="none">
+                <svg class="w-16 h-16 text-white/90 drop-shadow-md relative z-10" viewBox="0 0 100 100" fill="none">
                   <circle cx="50" cy="50" r="42" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3" class="opacity-40" />
                   <circle cx="50" cy="50" r="30" stroke="currentColor" stroke-width="2" class="opacity-65" />
                   <circle cx="50" cy="50" r="18" stroke="currentColor" stroke-width="2.5" class="opacity-90" />
                   <circle cx="50" cy="50" r="6" fill="currentColor" />
                 </svg>
-                <span id="album-art-badge" class="relative z-10 mt-3 text-[10px] font-mono uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-black/40 backdrop-blur text-white border border-white/15">
-                  Hipermídia Audio
+                <span id="album-art-badge" class="relative z-10 mt-3 text-[10px] uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-black/40 backdrop-blur text-white border border-white/15">
+                  Trabalho 03
                 </span>
               </div>
 
-              <!-- Track Title & Badges -->
               <div class="flex flex-col items-center sm:items-start lg:items-center">
                 <div class="flex flex-wrap items-center justify-center sm:justify-start lg:justify-center gap-1.5 mb-2">
-                  <span class="px-2 py-0.5 rounded bg-white/10 border border-white/10 text-[10px] font-mono font-semibold tracking-wider uppercase text-zinc-200">
-                    Lossless 44.1kHz
+                  <span class="px-2 py-0.5 rounded bg-white/10 border border-white/10 text-[10px] font-semibold tracking-wider uppercase text-zinc-200">
+                    Tratamento de Áudio
                   </span>
-                  <span class="px-2 py-0.5 rounded bg-apple-red/20 border border-apple-red/30 text-[10px] font-mono font-semibold tracking-wider uppercase text-apple-red">
-                    Dolby Atmos · Espacial
+                  <span class="px-2 py-0.5 rounded bg-apple-red/20 border border-apple-red/30 text-[10px] font-semibold tracking-wider uppercase text-apple-red">
+                    Remoção de Ruídos e Efeitos
                   </span>
                 </div>
 
                 <h3 id="audio-track-title" class="text-xl sm:text-2xl font-bold tracking-tight">
-                  Episódio 01: O Som como Interface Hipermídia
+                  Atividade Prática de Áudio
                 </h3>
                 <p id="audio-track-artist" class="text-sm text-apple-gray mt-1">
-                  Trabalho de Áudio · Síntese &amp; Narrativa Sonora
+                  Disciplina de Hipermídia
                 </p>
               </div>
             </div>
 
-            <!-- Real-time Web Audio API Waveform & Spectrum Canvas -->
+            <!-- Visualizador de Ondas Sonoras -->
             <div class="mt-6 bg-black/40 dark:bg-black/45 border border-white/10 rounded-2xl p-3.5">
-              <div class="flex items-center justify-between text-[11px] font-mono text-apple-gray mb-2">
+              <div class="flex items-center justify-between text-[11px] text-apple-gray mb-2">
                 <span class="flex items-center gap-1.5">
                   <span id="audio-live-dot" class="w-2 h-2 rounded-full bg-zinc-500"></span>
-                  <span id="audio-viz-label">Analisador Espectral FFT</span>
+                  <span id="audio-viz-label">Frequências do Áudio</span>
                 </span>
                 <button id="toggle-viz-mode" type="button" class="text-apple-red hover:underline focus:outline-none">
-                  Modo: Barras / Onda
+                  Alternar visualização
                 </button>
               </div>
-              <canvas id="audio-visualizer" width="460" height="84" class="w-full h-20 rounded-lg cursor-pointer" title="Clique para alternar o estilo do visualizador"></canvas>
+              <canvas id="audio-visualizer" width="460" height="84" class="w-full h-20 rounded-lg cursor-pointer" title="Clique para alternar o estilo do gráfico"></canvas>
             </div>
 
-            <!-- Scrubber & Timecode -->
+            <!-- Barra de Progresso do Áudio -->
             <div class="mt-5">
               <input
                 id="audio-scrubber"
                 type="range"
                 min="0"
-                max="100"
+                max="61"
                 step="0.1"
                 value="0"
                 aria-label="Progresso do áudio"
@@ -659,40 +541,35 @@
               />
               <div class="flex justify-between text-[11px] font-mono text-apple-gray mt-1.5">
                 <span id="audio-current-time">0:00</span>
-                <span id="audio-remaining-time">-0:36</span>
+                <span id="audio-remaining-time">-1:01</span>
               </div>
             </div>
 
-            <!-- Apple Music Main Transport Controls -->
+            <!-- Botões de Reprodução -->
             <div class="mt-4 flex items-center justify-center gap-6">
-              <!-- Previous Track -->
-              <button id="audio-prev-btn" type="button" title="Faixa Anterior" class="p-2 text-zinc-300 hover:text-white transition-transform active:scale-90">
+              <button id="audio-prev-btn" type="button" title="Início da Faixa" class="p-2 text-zinc-300 hover:text-white transition-transform active:scale-90">
                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
               </button>
 
-              <!-- Skip -5s -->
               <button id="audio-back-5s" type="button" title="Voltar 5 segundos" class="p-2 text-zinc-400 hover:text-white transition-colors text-xs font-mono">
                 -5s
               </button>
 
-              <!-- Play / Pause Large Circle -->
               <button id="audio-play-btn" type="button" aria-label="Reproduzir ou Pausar Áudio" class="w-16 h-16 rounded-full bg-white text-black hover:scale-105 active:scale-95 transition-all shadow-xl flex items-center justify-center">
                 <svg id="audio-play-icon" class="w-7 h-7 ml-1 fill-current" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                 <svg id="audio-pause-icon" class="w-7 h-7 fill-current hidden" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
               </button>
 
-              <!-- Skip +5s -->
               <button id="audio-fwd-5s" type="button" title="Avançar 5 segundos" class="p-2 text-zinc-400 hover:text-white transition-colors text-xs font-mono">
                 +5s
               </button>
 
-              <!-- Next Track -->
-              <button id="audio-next-btn" type="button" title="Próxima Faixa" class="p-2 text-zinc-300 hover:text-white transition-transform active:scale-90">
+              <button id="audio-next-btn" type="button" title="Reiniciar Faixa" class="p-2 text-zinc-300 hover:text-white transition-transform active:scale-90">
                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
               </button>
             </div>
 
-            <!-- Volume Slider Bar -->
+            <!-- Controle de Volume -->
             <div class="mt-5 flex items-center gap-3 px-2">
               <svg class="w-4 h-4 text-apple-gray shrink-0" fill="currentColor" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/></svg>
               <input id="audio-volume" type="range" min="0" max="1" step="0.02" value="0.85" aria-label="Volume do áudio" class="apple-slider light-adaptive" />
@@ -703,94 +580,81 @@
             </div>
           </div>
 
-          <!-- RIGHT COLUMN (7 cols): Apple Music Live Transcript & Tracklist -->
+          <!-- COLUNA DIREITA: Acompanhamento da Atividade e Detalhes do Tratamento -->
           <div class="lg:col-span-7 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-white/10 pt-6 lg:pt-0 lg:pl-8">
             
-            <!-- iOS / macOS Segmented Control -->
             <div class="flex items-center justify-between gap-4 mb-5 flex-wrap">
               <div class="inline-flex p-1 rounded-xl bg-white/5 border border-white/10">
                 <button type="button" data-audio-tab="lyrics" class="audio-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white/15 text-white shadow transition-all">
-                  Roteiro Sincronizado (Live)
-                </button>
-                <button type="button" data-audio-tab="playlist" class="audio-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-apple-gray hover:text-white transition-all">
-                  Faixas do Trabalho (3)
+                  Etapas do Áudio
                 </button>
                 <button type="button" data-audio-tab="specs" class="audio-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-apple-gray hover:text-white transition-all">
-                  Ficha Acústica
+                  Sobre o Tratamento Sonoro
                 </button>
               </div>
+              <button type="button" data-audio-tab="playlist" class="audio-tab-btn hidden">Faixas</button>
 
-              <span class="text-[11px] font-mono text-apple-gray hidden sm:inline">
-                Clique em qualquer trecho para sincronizar o áudio
+              <span class="text-[11px] text-apple-gray hidden sm:inline">
+                Clique em um trecho abaixo para ouvir a partir daquele momento
               </span>
             </div>
 
-            <!-- TAB 1: SYNCHRONIZED LIVE TRANSCRIPT (Apple Music Live Lyrics Pattern) -->
+            <!-- ABA 1: ACOMPANHAMENTO POR TEMPO -->
             <div id="audio-tab-lyrics" class="audio-tab-panel flex-1">
               <div id="lyrics-scroll-box" class="lyrics-container h-[340px] overflow-y-auto pr-2 space-y-5 py-6">
-                <!-- Populated dynamically by script.js based on active track -->
+                <!-- Preenchido pelo script.js -->
               </div>
             </div>
 
-            <!-- TAB 2: TRACKLIST / PLAYLIST -->
+            <!-- ABA OCULTA DE LISTA -->
             <div id="audio-tab-playlist" class="audio-tab-panel hidden flex-1">
-              <div class="space-y-3" id="audio-tracklist-container">
-                <!-- Populated dynamically by script.js -->
-              </div>
-              <div class="mt-4 p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
-                <div class="text-xs text-apple-gray">
-                  Deseja testar com uma gravação, locução ou trilha própria em <code class="text-zinc-200">.mp3</code> ou <code class="text-zinc-200">.wav</code>?
-                </div>
-                <label for="audio-file-input" class="cursor-pointer px-3 py-1.5 rounded-lg bg-apple-red text-white text-xs font-semibold shrink-0 hover:opacity-90 transition-opacity">
-                  Importar Áudio
-                </label>
-              </div>
+              <div class="space-y-3" id="audio-tracklist-container"></div>
             </div>
 
-            <!-- TAB 3: ACOUSTIC TELEMETRY & PRODUCTION NOTES -->
+            <!-- ABA 2: SOBRE O TRATAMENTO SONORO REALIZADO -->
             <div id="audio-tab-specs" class="audio-tab-panel hidden flex-1">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
-                  <span class="text-[11px] font-mono uppercase text-apple-red">Arquitetura de Áudio</span>
-                  <h4 class="font-semibold text-sm mt-1">Síntese PCM &amp; Web Audio API</h4>
+                  <span class="text-[11px] uppercase text-apple-red font-semibold">1. Limpeza do Áudio</span>
+                  <h4 class="font-semibold text-sm mt-1">Remoção de Ruídos</h4>
                   <p class="text-xs text-apple-gray mt-1 leading-relaxed">
-                    O sinal passa por um grafo de áudio contendo nó de ganho (<code class="text-zinc-300">GainNode</code>) e analisador de Transformada Rápida de Fourier (<code class="text-zinc-300">AnalyserNode</code> de 256 bandas) a 60 quadros por segundo.
+                    Identificação do perfil de ruído de fundo da gravação original e atenuação de chiados para destacar a voz principal com clareza.
                   </p>
                 </div>
                 <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
-                  <span class="text-[11px] font-mono uppercase text-apple-blue">Padrão Hipermídia</span>
-                  <h4 class="font-semibold text-sm mt-1">Sincronização Texto-Áudio</h4>
+                  <span class="text-[11px] uppercase text-apple-blue font-semibold">2. Edição e Efeitos</span>
+                  <h4 class="font-semibold text-sm mt-1">Cortes, Nivelamento e Efeitos</h4>
                   <p class="text-xs text-apple-gray mt-1 leading-relaxed">
-                    Inspirado no Apple Music Live Lyrics, cada parágrafo do roteiro possui um vetor temporal (<code class="text-zinc-300">startTime / endTime</code>) permitindo leitura indexada pelo tempo.
+                    Recorte de pausas desnecessárias, ajuste de ganho/volume entre trechos e aplicação de efeitos para enriquecer a apresentação sonora.
                   </p>
                 </div>
                 <div class="p-4 rounded-2xl bg-white/5 border border-white/10 sm:col-span-2">
-                  <div class="flex items-center justify-between text-xs font-mono mb-2">
-                    <span class="text-apple-gray">TAXA DE AMOSTRAGEM</span>
-                    <span class="text-white">44.100 Hz · 16-bit Estéreo</span>
+                  <div class="flex items-center justify-between text-xs mb-2">
+                    <span class="text-apple-gray">ARQUIVO DO TRABALHO</span>
+                    <span class="text-white font-mono">atividade_audio.mp3</span>
                   </div>
-                  <div class="flex items-center justify-between text-xs font-mono mb-2">
-                    <span class="text-apple-gray">FORMATO NATIVO</span>
-                    <span class="text-white" id="audio-format-spec">WAV PCM Sintetizado / HTML5 Audio</span>
+                  <div class="flex items-center justify-between text-xs mb-2">
+                    <span class="text-apple-gray">DURAÇÃO TOTAL</span>
+                    <span class="text-white" id="audio-format-spec">01 min 01 seg</span>
                   </div>
-                  <div class="flex items-center justify-between text-xs font-mono">
-                    <span class="text-apple-gray">ACESSIBILIDADE</span>
-                    <span class="text-apple-green">Roteiro Interativo &amp; Controle por Teclado</span>
+                  <div class="flex items-center justify-between text-xs">
+                    <span class="text-apple-gray">TÉCNICAS APLICADAS</span>
+                    <span class="text-apple-green">Redução de ruído, cortes e efeitos de áudio</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Bottom Status Footer inside Audio Card -->
+            <!-- Rodapé Interno do Card de Áudio -->
             <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-apple-gray">
               <div id="audio-eq-indicator" class="flex items-end gap-1 h-4">
                 <span class="eq-bar h-1"></span>
                 <span class="eq-bar h-2"></span>
                 <span class="eq-bar h-1.5"></span>
                 <span class="eq-bar h-1"></span>
-                <span id="audio-status-text" class="ml-2 font-mono text-[11px]">Em espera</span>
+                <span id="audio-status-text" class="ml-2 text-[11px]">Pronto para reprodução</span>
               </div>
-              <span class="font-mono text-[11px]">Web Audio Engine v2.4</span>
+              <span class="text-[11px]">Disciplina de Hipermídia</span>
             </div>
 
           </div>
@@ -799,84 +663,50 @@
     </section>
 
     <!-- ======================================================================
-         SECTION 3: BENTO GRID — CONCEITOS DE HIPERMÍDIA & DESIGN SYSTEM APPLE
+         SEÇÃO 3: SOBRE A DISCIPLINA DE HIPERMÍDIA
          ====================================================================== -->
     <section id="concepts-section" class="py-12 scroll-mt-16">
       <div class="mb-8">
         <div class="inline-flex items-center gap-2 text-apple-purple text-xs font-semibold uppercase tracking-widest mb-2">
           <span class="w-2 h-2 rounded-full bg-apple-purple"></span>
-          Fundamentação Teórica &amp; Estética
+          Resumo Acadêmico
         </div>
         <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
-          Arquitetura Hipermídia sob o Design da Apple
+          Conteúdos Trabalhados na Disciplina
         </h2>
       </div>
 
-      <!-- Apple Promotional Style Bento Grid -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
         
-        <!-- Bento Card 1 (7 cols) -->
-        <div class="md:col-span-7 apple-card apple-card-hover rounded-apple p-7 flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute -right-12 -bottom-12 w-56 h-56 rounded-full bg-apple-blue/15 blur-3xl pointer-events-none"></div>
+        <!-- Card 1: Tratamento de Áudio (6 cols) -->
+        <div class="md:col-span-6 apple-card apple-card-hover rounded-apple p-7 flex flex-col justify-between relative overflow-hidden">
           <div>
-            <span class="px-2.5 py-1 rounded-full bg-apple-blue/20 text-apple-blue text-xs font-semibold">Convergência Hipermídia</span>
-            <h3 class="text-2xl font-bold mt-4">Muito além da reprodução linear.</h3>
+            <span class="px-2.5 py-1 rounded-full bg-apple-red/20 text-apple-red text-xs font-semibold">Produção Sonora</span>
+            <h3 class="text-2xl font-bold mt-4">Tratamento e Edição de Áudio</h3>
             <p class="text-apple-gray text-sm sm:text-base mt-2 leading-relaxed">
-              Enquanto a <strong class="text-zinc-200">Multimídia</strong> combina múltiplos meios (texto, som, imagem em movimento e gráficos vetoriais), a <strong class="text-zinc-200">Hipermídia</strong> adiciona estruturas de navegação associativa. Neste portfólio, o vídeo e o áudio não são caixas pretas passivas: o usuário navega por nós de capítulos e estrofes sincronizadas no tempo.
+              Nas aulas práticas de áudio, trabalhamos as etapas essenciais de pós-produção sonora: análise da faixa gravada, <strong class="text-zinc-200">remoção de ruídos</strong> de ambiente, eliminação de respirações ou falhas através de cortes precisos, normalização de volume e <strong class="text-zinc-200">aplicação de efeitos</strong> para tornar o áudio mais limpo e agradável.
             </p>
           </div>
-          <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-2 text-xs font-mono text-zinc-300">
-            <span class="px-2.5 py-1 rounded-lg bg-white/5">Nós Temporais</span>
-            <span class="px-2.5 py-1 rounded-lg bg-white/5">Roteiro Clicável</span>
-            <span class="px-2.5 py-1 rounded-lg bg-white/5">Feedback Multissensorial</span>
+          <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-2 text-xs text-zinc-300">
+            <span class="px-2.5 py-1 rounded-lg bg-white/5">Remoção de Ruídos</span>
+            <span class="px-2.5 py-1 rounded-lg bg-white/5">Equalização e Volume</span>
+            <span class="px-2.5 py-1 rounded-lg bg-white/5">Efeitos Sonoros</span>
           </div>
         </div>
 
-        <!-- Bento Card 2 (5 cols) -->
-        <div class="md:col-span-5 apple-card apple-card-hover rounded-apple p-7 flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute -right-10 -top-10 w-48 h-48 rounded-full bg-apple-purple/15 blur-3xl pointer-events-none"></div>
+        <!-- Card 2: Tratamento de Vídeo e Chroma Key (6 cols) -->
+        <div class="md:col-span-6 apple-card apple-card-hover rounded-apple p-7 flex flex-col justify-between relative overflow-hidden">
           <div>
-            <span class="px-2.5 py-1 rounded-full bg-apple-purple/20 text-apple-purple text-xs font-semibold">Apple Design Patterns</span>
-            <h3 class="text-2xl font-bold mt-4">Hierarquia, Translucidez e Física.</h3>
+            <span class="px-2.5 py-1 rounded-full bg-apple-blue/20 text-apple-blue text-xs font-semibold">Produção Audiovisual</span>
+            <h3 class="text-2xl font-bold mt-4">Tratamento de Vídeo, Cortes e Chroma Key</h3>
             <p class="text-apple-gray text-sm sm:text-base mt-2 leading-relaxed">
-              Seguindo o <em>Human Interface Guidelines</em> (macOS Sequoia &amp; visionOS), utilizamos superfícies de vidro fosco (<code class="text-xs text-zinc-300">backdrop-blur</code>), bordas especulares de 1px, tipografia geométrica e controles que se expandem suavemente ao toque ou cursor.
+              No módulo de vídeo, desenvolvemos a montagem e edição não-linear realizando <strong class="text-zinc-200">cortes</strong>, sincronização entre som e imagem, inserção de transições, <strong class="text-zinc-200">efeitos visuais</strong> e o uso de <strong class="text-zinc-200">Chroma Key</strong> para remoção do fundo verde e composição com novos cenários digitais.
             </p>
           </div>
-          <div class="mt-6 grid grid-cols-3 gap-2 text-center text-xs font-mono">
-            <div class="p-2.5 rounded-xl bg-white/5 border border-white/10">
-              <div class="text-white font-bold">24px</div>
-              <div class="text-[10px] text-apple-gray">Blur Radius</div>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white/5 border border-white/10">
-              <div class="text-white font-bold">60 FPS</div>
-              <div class="text-[10px] text-apple-gray">Canvas &amp; FFT</div>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white/5 border border-white/10">
-              <div class="text-white font-bold">AA+</div>
-              <div class="text-[10px] text-apple-gray">Contraste</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bento Card 3 (12 cols): Guia de Personalização Acadêmica -->
-        <div id="specs-section" class="md:col-span-12 apple-card rounded-apple p-7 scroll-mt-20">
-          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-            <div class="max-w-2xl">
-              <span class="px-2.5 py-1 rounded-full bg-apple-green/20 text-apple-green text-xs font-semibold">Ficha Técnica &amp; Como Usar Seus Arquivos</span>
-              <h3 class="text-xl sm:text-2xl font-bold mt-3">Como substituir pelos arquivos finais da disciplina</h3>
-              <p class="text-apple-gray text-sm mt-1.5 leading-relaxed">
-                Você pode apresentar seus trabalhos de duas maneiras imediatas: clicando nos botões <strong class="text-zinc-200">"Carregar Meu Vídeo"</strong> e <strong class="text-zinc-200">"Carregar Meu Áudio"</strong> diretamente nesta interface, ou salvando seus arquivos na mesma pasta do projeto.
-              </p>
-            </div>
-
-            <!-- Code Snippet Guide -->
-            <div class="bg-black/60 border border-white/10 rounded-2xl p-4 font-mono text-xs text-zinc-300 overflow-x-auto shrink-0">
-              <div class="text-apple-gray mb-1">// Atalhos de Teclado Globais do Portfólio:</div>
-              <div><span class="text-apple-blue">Espaço</span> : Play / Pause no player ativo</div>
-              <div><span class="text-apple-blue">← / →</span>  : Retroceder / Avançar na linha do tempo</div>
-              <div><span class="text-apple-blue">M</span>      : Silenciar (Mute)</div>
-              <div><span class="text-apple-blue">F</span>      : Alternar Tela Cheia no Vídeo</div>
-            </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-2 text-xs text-zinc-300">
+            <span class="px-2.5 py-1 rounded-lg bg-white/5">Cortes e Montagem</span>
+            <span class="px-2.5 py-1 rounded-lg bg-white/5">Efeitos Visuais</span>
+            <span class="px-2.5 py-1 rounded-lg bg-white/5">Chroma Key</span>
           </div>
         </div>
 
@@ -886,17 +716,15 @@
   </main>
 
   <!-- ========================================================================
-       APPLE MINIMALIST FOOTER
+       RODAPÉ ACADÊMICO
        ======================================================================== -->
   <footer class="border-t border-white/10 py-10 text-xs text-apple-gray">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
-        <span class="font-semibold text-zinc-300">Portfólio de Hipermídia e Multimídia</span>
-        <span>·</span>
-        <span>Desenvolvido com HTML5, CSS3, Tailwind CSS &amp; Web Media APIs</span>
+        <span class="font-semibold text-zinc-300">Portfólio Acadêmico — Curso de Hipermídia</span>
       </div>
       <div>
-        Design inspirado nos padrões <span class="text-zinc-300">Apple Human Interface Guidelines (HIG)</span>.
+        <span>Trabalhos práticos de edição de áudio, vídeo e efeitos visuais.</span>
       </div>
     </div>
   </footer>
