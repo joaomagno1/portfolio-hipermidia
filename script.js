@@ -556,7 +556,7 @@ document.addEventListener('DOMContentLoaded', () => {
       videoPauseIcon.classList.remove('hidden');
       videoCenterPlayIcon.classList.add('hidden');
       videoCenterPauseIcon.classList.remove('hidden');
-      videoCenterPlay.classList.add('opacity-0', ' group-hover:opacity-100');
+      videoCenterPlay.classList.add('opacity-0', 'group-hover:opacity-100');
       navMediaStatus.textContent = 'Vídeo · Reproduzindo';
     } else {
       videoPlayIcon.classList.remove('hidden');
