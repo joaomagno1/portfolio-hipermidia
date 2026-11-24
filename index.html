@@ -97,8 +97,9 @@
       <!-- Links de Navegação -->
       <nav class="hidden md:flex items-center gap-6 text-xs font-medium text-zinc-400 dark:text-zinc-300">
         <a href="#hero" class="hover:text-apple-blue transition-colors">Apresentação</a>
-        <a href="#video-section" class="hover:text-apple-blue transition-colors">Vídeo 01 (Curriculum Vitae)</a>
+        <a href="#video-section" class="hover:text-apple-blue transition-colors">Vídeo 01 (Currículo)</a>
         <a href="#youtube-section" class="hover:text-apple-blue transition-colors">Vídeo 02 (IFSP)</a>
+        <a href="#video3-section" class="hover:text-apple-blue transition-colors">Vídeo 03 (História IFSP)</a>
         <a href="#audio-section" class="hover:text-apple-blue transition-colors">Atividade de Áudio</a>
         <a href="#concepts-section" class="hover:text-apple-blue transition-colors">Sobre a Disciplina</a>
       </nav>
@@ -148,7 +149,11 @@
         </a>
         <a href="#youtube-section" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full apple-card hover:border-apple-purple/50 text-sm font-medium transition-all hover:scale-[1.02] active:scale-[0.98]">
           <svg class="w-4 h-4 text-apple-purple fill-current" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          Vídeo 02: IFSP Técnico em Administração
+          Vídeo 02: IFSP Administração
+        </a>
+        <a href="#video3-section" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full apple-card hover:border-apple-green/50 text-sm font-medium transition-all hover:scale-[1.02] active:scale-[0.98]">
+          <svg class="w-4 h-4 text-apple-green fill-current" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Vídeo 03: Nossa História no IFSP (Entrega Final)
         </a>
         <a href="#audio-section" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full apple-card hover:border-white/30 text-sm font-medium transition-all hover:scale-[1.02] active:scale-[0.98]">
           <svg class="w-4 h-4 text-apple-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -536,6 +541,145 @@
     </section>
 
     <!-- ======================================================================
+         SEÇÃO 1.8: TERCEIRO TRABALHO DE VÍDEO — ENTREGA FINAL (Video_renato2.mp4)
+         ====================================================================== -->
+    <section id="video3-section" class="py-12 scroll-mt-16">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-6 gap-4">
+        <div>
+          <div class="inline-flex items-center gap-2 text-apple-green text-xs font-semibold uppercase tracking-widest mb-2">
+            <span class="w-2 h-2 rounded-full bg-apple-green"></span>
+            Trabalho 03 · Última Entrega — Edição de Áudio, Vídeo e Chroma Key
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+            Nossa História no IFSP e Perspectivas para o Futuro
+          </h2>
+          <p class="text-apple-gray text-sm sm:text-base mt-1.5 max-w-3xl leading-relaxed">
+            Última entrega da disciplina, na qual gravamos contando como foi a nossa história durante o curso no IFSP e como nos imaginamos no futuro. Após a gravação, realizamos edições completas de áudio e vídeo, inserindo músicas de fundo, além de fotos e vídeos aplicados no <strong class="text-zinc-200 font-medium">Chroma Key</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- PLAYER PRÓPRIO DO TERCEIRO VÍDEO (Video_renato2.mp4) -->
+      <div class="relative group" id="v3-player-wrapper">
+        <div class="ambient-glow absolute -inset-3 rounded-[36px] bg-gradient-to-r from-apple-green/20 via-apple-teal/15 to-apple-blue/20 opacity-60 pointer-events-none z-0"></div>
+
+        <div id="v3-viewport" class="relative z-10 w-full aspect-video rounded-apple-lg overflow-hidden bg-zinc-950 border border-white/15 shadow-2xl select-none">
+
+          <video id="third-video" src="Video_renato2.mp4" class="w-full h-full object-contain bg-black cursor-pointer" playsinline preload="metadata">
+            <source src="Video_renato2.mp4" type="video/mp4" />
+            Seu navegador não suporta a reprodução de vídeo.
+          </video>
+
+          <!-- Barra Superior do Player 03 -->
+          <div class="video-controls-overlay absolute inset-x-0 top-0 p-4 sm:p-6 flex items-center justify-between pointer-events-none">
+            <div class="flex items-center gap-3">
+              <span class="px-2.5 py-1 rounded-md bg-emerald-600/80 backdrop-blur-md text-[11px] font-semibold tracking-wide text-white uppercase border border-white/20">
+                Trabalho 03 · Entrega Final
+              </span>
+              <div>
+                <h3 class="text-white text-sm sm:text-base font-semibold leading-tight drop-shadow">
+                  Nossa História no IFSP e Perspectivas para o Futuro
+                </h3>
+                <p class="text-zinc-300 text-xs">
+                  Edição de Áudio e Vídeo, Música de Fundo e Fotos/Vídeos em Chroma Key
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botão Central de Play/Pause do Player 03 -->
+          <button id="v3-center-play" type="button" aria-label="Reproduzir ou Pausar Vídeo 03" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full apple-glass flex items-center justify-center text-white shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group/play">
+            <svg id="v3-center-play-icon" class="w-9 h-9 ml-1 fill-current transition-transform group-hover/play:scale-105" viewBox="0 0 24 24">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+            <svg id="v3-center-pause-icon" class="w-9 h-9 fill-current hidden" viewBox="0 0 24 24">
+              <rect x="6" y="4" width="4" height="16" rx="1" />
+              <rect x="14" y="4" width="4" height="16" rx="1" />
+            </svg>
+          </button>
+
+          <!-- Barra de Controles Inferior do Player 03 -->
+          <div class="video-controls-overlay absolute inset-x-0 bottom-0 p-4 sm:p-6 pt-12 flex flex-col gap-3">
+            
+            <!-- Linha do Tempo -->
+            <div class="relative w-full flex items-center group/scrub">
+              <input
+                id="v3-scrubber"
+                type="range"
+                min="0"
+                max="586"
+                step="0.1"
+                value="0"
+                aria-label="Linha do tempo do vídeo 03"
+                class="apple-slider z-20"
+              />
+            </div>
+
+            <!-- Controles de Transporte -->
+            <div class="flex items-center justify-between gap-2 text-white">
+              <div class="flex items-center gap-3 sm:gap-4">
+                <button id="v3-play-btn" type="button" title="Reproduzir / Pausar" class="p-2 rounded-full hover:bg-white/15 transition-colors">
+                  <svg id="v3-play-icon" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  <svg id="v3-pause-icon" class="w-5 h-5 fill-current hidden" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+                </button>
+
+                <button id="v3-skip-back" type="button" title="Retroceder 10 segundos" class="p-1.5 rounded-full hover:bg-white/15 transition-colors text-zinc-200 hover:text-white flex items-center gap-0.5 text-xs font-mono">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/></svg>
+                  <span>10s</span>
+                </button>
+
+                <button id="v3-skip-fwd" type="button" title="Avançar 10 segundos" class="p-1.5 rounded-full hover:bg-white/15 transition-colors text-zinc-200 hover:text-white flex items-center gap-0.5 text-xs font-mono">
+                  <span>10s</span>
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13 17l5-5-5-5M6 17l5-5-5-5"/></svg>
+                </button>
+
+                <div class="hidden sm:flex items-center gap-2 group/vol">
+                  <button id="v3-mute-btn" type="button" title="Silenciar / Ativar Som" class="p-1.5 rounded-full hover:bg-white/15 transition-colors">
+                    <svg id="v3-vol-icon" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor" />
+                      <path stroke-linecap="round" d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14" />
+                    </svg>
+                    <svg id="v3-mute-icon" class="w-5 h-5 hidden text-apple-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor" />
+                      <line x1="23" y1="9" x2="17" y2="15" />
+                      <line x1="17" y1="9" x2="23" y2="15" />
+                    </svg>
+                  </button>
+                  <input id="v3-volume" type="range" min="0" max="1" step="0.02" value="0.8" aria-label="Volume do vídeo 03" class="apple-slider w-20" />
+                </div>
+
+                <div class="text-xs font-mono text-zinc-200 tracking-tight">
+                  <span id="v3-current-time">00:00</span>
+                  <span class="text-zinc-500 mx-1">/</span>
+                  <span id="v3-duration">09:46</span>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-2 sm:gap-3">
+                <button id="v3-speed-btn" type="button" title="Velocidade de Reprodução" class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-mono font-semibold transition-colors">
+                  1.0x
+                </button>
+
+                <button id="v3-pip-btn" type="button" title="Miniatura (Picture-in-Picture)" class="p-2 rounded-full hover:bg-white/15 transition-colors">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <rect x="12" y="9" width="8" height="6" rx="1" fill="currentColor" />
+                  </svg>
+                </button>
+
+                <button id="v3-fullscreen-btn" type="button" title="Tela Cheia" class="p-2 rounded-full hover:bg-white/15 transition-colors">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
          SEÇÃO 2: TRABALHO DE ÁUDIO (atividade_audio.mp3)
          ====================================================================== -->
     <section id="audio-section" class="py-14 scroll-mt-16">
@@ -543,7 +687,7 @@
         <div>
           <div class="inline-flex items-center gap-2 text-apple-red text-xs font-semibold uppercase tracking-widest mb-2">
             <span class="w-2 h-2 rounded-full bg-apple-red"></span>
-            Trabalho 03 · Edição e Tratamento Sonoro
+            Trabalho 04 · Edição e Tratamento Sonoro
           </div>
           <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
             Atividade Prática de Áudio
